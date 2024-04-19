@@ -1,0 +1,621 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Dancing+Script:wght@400;500&family=Noto+Serif:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto:wght@700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #;
+  --second-color: #7fa99b;
+  --text-color: #393e46;
+  --gradient: linear-gradient(#6c5b7c, #c06c84);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+section:last-child {
+  border-bottom: none; 
+}
+
+.main-heading {
+    font-size: 2.4rem;
+}
+
+
+/* ===== HEADER ==== */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 5rem;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 10px;
+  color: #393e46;
+  font-weight: 500;
+}
+
+.header-btn a {
+  padding: 15px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar li a::after {
+    content:"";
+    width: 0;
+    height: 3px;
+    background: #7b33fb;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+}
+
+.header-btn .sign-in {
+  
+  color: #333;
+  border-radius: 2.5rem;
+  margin-left: -5rem;
+  border: 1px solid #333;
+  font-size: 0.90rem;
+}
+
+.header-btn .sign-in:hover {
+  background: linear-gradient(to left, #9b51e0, #7b33fb);
+  transition: all 0.3s ease;
+  color: #f8f9fa;
+  border: none;
+}
+
+.hero-section {
+    margin-top: 9rem; 
+}
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 5rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px; 
+}
+
+.image-container img {
+    flex: 1;
+    padding: 10px;
+    border-radius: 50%; 
+    overflow: hidden;
+    width: 10px;  
+    height: 100px; 
+}
+
+/*---------------Platform----------------*/
+.contentplatform {
+    text-align: center;
+    padding: 0 70px;
+    margin-top: 5rem;
+}
+
+.platformheading {
+    font-size:2.5rem ;
+    text-align: center;
+}
+
+.list-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+.list {
+    margin-top: 3rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.info-boxes {
+    margin-top: 20px;
+}
+
+.info-box {
+    display: none;
+    padding: 20px;
+    border: 1px solid #6c5b7c;
+    width: 500px; 
+    font-size: 1rem;
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+}
+
+.sign-platform {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.sign-platform:hover {
+    background: linear-gradient(to left, #9b51e0, #7b33fb);
+  transition: all 0.3s ease; 
+  color: #f8f9fa;
+  border: none;
+}
+
+.adjustable-element {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    margin-right: -8.5rem;
+  }
+  
+
+/*------------- ===== TEAM SECTION ====----------------*/
+.content {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%; 
+}
+
+.team {
+    max-width: 800px; 
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px; 
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.ceo-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    margin-top: 20px; 
+    column-gap: 50px;
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 5px; 
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 3px;
+    }
+    
+}
+
+.founder img {
+    display: inline-block; 
+    width: 110%; 
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.linkedin-icon {
+    font-size: 40px;
+    color: #333;
+    text-decoration: none;
+    margin-top: -1rem;
+}
+
+
+
+/*-----------HEADS-----------------*/
+
+.head-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 50px;
+}
+
+
+.heads img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    margin-bottom: 10px;
+}
+
+.heads h2 {
+    font-size: 1.2rem;
+    margin-top: 5px; 
+}
+
+
+.linkedin-icon {
+    display: block;
+    color: #393e46;
+    text-decoration: none;
+}
+
+.linkedin-icon:hover {
+    color:#7b33fb; 
+}
+
+
+/*---------------Better Ideas---------------------*/
+.better-ideas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.content {
+    flex: 1;
+    padding-right: 40px; 
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+
+.image-container img {
+    width: 80%; 
+    height: auto; 
+    margin-top: -10rem;
+    margin-left: 5rem;
+    margin-bottom: 1.2rem;
+}
+
+
+.infoboard {
+    text-align: center; 
+}
+
+.infoboard h1 {
+    margin-bottom: 10px; 
+}
+
+
+img.brandlogo {
+    width: 90px; 
+    height: auto; 
+}
+
+/*---------------Advisor---------------------*/
+.advisor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px; 
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 1rem;
+    padding: 50px;
+}
+
+
+.advisor img {
+    width: 70%; 
+    max-width: 700px; 
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+.advisor h2 {
+    font-size: 27px; 
+    margin-bottom: 5px; 
+}
+
+.logoadvisor {
+    width: 100px !important; 
+    height: auto;
+    margin-top: 10px; 
+}
+
+/*-----------------Board------------------------*/
+.board-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 1rem;
+    padding: 0 130px;
+}
+
+.board img {
+    width: 80%; 
+    max-width: 700px; 
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px; 
+    border-radius: 1rem;
+}
+
+.board h2 {
+    font-size: 1.5rem;
+}
+
+
+/*---------------Investor---------------------*/
+.investor {
+    align-items: center;
+}
+
+.investor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content:center;
+    align-items: stretch;
+    margin-top: 1rem;
+    padding: 50px;
+}
+
+
+/*--------------Comapnies---------------------*/
+.companies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 80px;
+}
+
+
+.comlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+
+.comlogo img {
+    width: 60%;
+    height: auto;
+    border-radius: 0.5em;
+    margin-bottom: 10px;
+}
+
+/*---------------Work Ideas---------------------*/
+.work-ideas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+} 
+
+
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container2 img {
+    width: 80%; 
+    height: auto;
+    margin: 10px; 
+    margin-right: -5rem;
+}
+
+
+
+.btn .sign-in {
+    color: #333;
+    border-radius: 2.5rem;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    
+  }
+  
+  .btn .sign-in:hover {
+    background: linear-gradient(to left, #9b51e0, #7b33fb);
+  transition: all 0.3s ease;
+  color: #f8f9fa;
+  border: none;
+  }
+
+  .think-ideas {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+.content1 {
+    max-width: 500px; 
+    font-size: 1.4rem;
+    color: aliceblue;
+}
+
+.image-container3 {
+    margin-left: 50px; 
+}
+
+.image-container3 img {
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 50%; 
+}
+.btn1 .sign-in {
+    background: #5e63b6;
+    color: aliceblue;
+    border-radius: 2.5rem;
+    padding: 10px 20px;
+    
+    
+  }
+
+
+/*----------Footer----------------*/
+
+  footer {
+    background-color: #f8f9fa; 
+    padding: 20px 0; 
+}
+
+.containerfooter {
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.containerfooter h1 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.footerflex {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.footer-left img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.footer-right a {
+    text-decoration: none; 
+    color: #333; 
+    margin-right: 15px; 
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer-right a:hover {
+    color:#7b33fb;
+}
+
+
+.below {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+    gap: 80px;
+    font-size: 1.1rem;
+    margin-left: -3.5rem;
+
+}
+
+.below a:hover{
+    color:#7b33fb;
+}
+
+.list a {
+    text-decoration: none; 
+    color: #333; 
+    margin-right: 10px; 
+}
+
+.email {
+    margin-left: 8rem;
+}
+
+.email p:hover {
+    color: #7b33fb;
+}
+.small-icon {
+    font-size: 40px; 
+    color: #333; 
+    margin-right: 10px; 
+}
+
+.small-icon:hover {
+    color: #7b33fb; 
+    cursor: pointer;
+}
+
+
